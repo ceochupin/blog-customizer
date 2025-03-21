@@ -29,6 +29,8 @@ export const useOverlayEscapeCloseForm = ({
 			}
 		};
 
+		if (!isOpen) return;
+
 		window.addEventListener('mousedown', handleOutsideClick);
 		window.addEventListener('keydown', handleEscapeKey);
 
